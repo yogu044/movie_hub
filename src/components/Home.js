@@ -13,15 +13,15 @@ export default function Home() {
   useEffect(() => {
     const fetchMovies = async () => {
       try {
-        const apiKey = "c3d6ddd037974eb1092e738333e8f3ce";
+        
         const recentRes = await axios.get(
-          `https://api.themoviedb.org/3/movie/now_playing?api_key=${apiKey}&language=en-US&page=1`
+          `https://api.themoviedb.org/3/movie/now_playing?api_key=${process.env.REACT_APP_TMDB_KEY}&language=en-US&page=1`
         );
         const topRatedRes = await axios.get(
-          `https://api.themoviedb.org/3/movie/top_rated?api_key=${apiKey}&language=en-US&page=1`
+          `https://api.themoviedb.org/3/movie/top_rated?api_key=${process.env.REACT_APP_TMDB_KEY}&language=en-US&page=1`
         );
         const popularRes = await axios.get(
-          `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=en-US&page=1`
+          `https://api.themoviedb.org/3/movie/popular?api_key=${process.env.REACT_APP_TMDB_KEY}&language=en-US&page=1`
         );
         setRecent(recentRes.data.results);
         setTopRated(topRatedRes.data.results);
