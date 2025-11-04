@@ -1,0 +1,161 @@
+/* Home.css */
+
+.home-page {
+  background: linear-gradient(120deg, #1e293b 0%, #334155 100%);
+  min-height: 100vh;
+  padding-bottom: 3rem;
+  color: #fff;
+}
+
+/* Header bar */
+.header-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 3rem 0 3rem;
+  background: transparent;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+}
+
+.app-logo {
+  font-size: 2rem;
+  margin-right: 0.5rem;
+}
+
+.logo-text {
+  font-weight: 700;
+  font-size: 1.5rem;
+  background: linear-gradient(to right, #60a5fa 40%, #a78bfa 80%, #34d399 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav-bar {
+  display: flex;
+  gap: 2.2rem;
+  font-size: 1rem;
+  color: #cbd5e1;
+}
+
+.nav-bar span {
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.nav-bar span:hover {
+  color: #60a5fa;
+}
+
+/* Hero section */
+.hero-container {
+  text-align: center;
+  margin: 3.2rem 0 2.8rem 0;
+}
+
+.main-title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  background: linear-gradient(to right,#60a5fa , #a78bfa, #34d399 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 1.2rem;
+  margin-top: 1rem;
+  letter-spacing: -1px;
+}
+
+.main-desc {
+  font-size: 1.1rem;
+  color: #b9b9c9;
+  margin-bottom: 2rem;
+  max-width: 540px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* SearchBar container and form */
+.search-container {
+  margin: 0 auto;
+  max-width: 520px;
+  margin-bottom: 2.3rem;
+}
+
+.search-form {
+  display: flex;
+  border-radius: 1.8rem;
+  overflow: hidden;
+  background: rgba(31,41,55,0.85);
+  box-shadow: 0 4px 24px rgba(52, 211, 153, 0.13);
+  border: 2px solid rgba(100,116,139,0.22);
+}
+
+.search-input {
+  padding: 1.1rem 1.4rem;
+  font-size: 1.25rem;
+  background: transparent;
+  border: none;
+  color: #fff;
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+.search-button {
+  background: linear-gradient(to right,#60a5fa , #34d399 100%);
+  border-radius: 0 1.8rem 1.8rem 0;
+  padding: 0 2.4rem;
+  font-size: 1.15rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+  color: white;
+}
+
+.search-button:hover {
+  box-shadow: 0 4px 24px rgba(96, 165, 250, 0.19);
+}
+
+/* Section titles for rows */
+.section-title {
+  font-size: 3rem;
+  margin-top: 2.5rem;
+  margin-bottom: 0.7rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Horizontal row for categories */
+.movie-row {
+  display: flex;
+  overflow-x: auto;
+  gap: 1.2rem;
+  padding: 1rem 0;
+  scroll-behavior: smooth;
+}
+
+.movie-row::-webkit-scrollbar {
+  display: none;
+}
+
+.movie-row {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Movie cards */
+.movie-card {
+  min-width: 200px;
+  flex-shrink: 0;
+  border-radius: 1.1rem;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.14);
+  background-color: #1e293b;
+}
