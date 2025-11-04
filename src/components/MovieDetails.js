@@ -18,7 +18,7 @@ export default function MovieDetails() {
 
     const fetchAll = async () => {
       try {
-        const apiKey = process.env.REACT_APP_TMDB_KEY;
+        const apiKey = "c3d6ddd037974eb1092e738333e8f3ce";
         const id = movieFromState.id;
 
         const [detailsRes, creditsRes, similarRes] = await Promise.all([

@@ -18,8 +18,9 @@ export default function SearchBar() {
 
     const fetch = async () => {
       try {
+        const apiKey = "c3d6ddd037974eb1092e738333e8f3ce";
         const res = await axios.get(
-          `https://api.themoviedb.org/3/search/movie?query=${query}&api_key=${process.env.REACT_APP_TMDB_KEY}&language=en-US&page=1`
+          `https://api.themoviedb.org/3/search/movie?query=${query}&api_key=${apiKey}&language=en-US&page=1`
         )
         setMovies(res.data.results);
         navigate('/movielist')
